@@ -27,6 +27,7 @@
     "gulp-util": "^3.0.7"
   },
   "devDependencies": {
+    "browser-sync": "^2.19.0",
     "gulp-htmlmin": "^3.0.0"
   }
 }

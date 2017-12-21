@@ -90,6 +90,7 @@
   padding: 0 10px 0 0;
   margin-left: 240px;
   min-height: 70px;
+  max-height: 70px;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.3);
 
   .nav-link {
@@ -113,15 +114,27 @@
       float: left;
     }
   }
+  .menu_superior{
+    li{
+      margin: 0 4% 0 0
+    }
+
+  }
+
 }
 
 .logo {
-  color: $white;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-
+  // color: $white;
+  // font-size: 20px;
+  // font-weight: 700;
+  // text-transform: uppercase;
+  // letter-spacing: 1px;
+  color: #ffffff !important;
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  text-transform: lowercase !important;
+  letter-spacing: 0px !important;
+  line-height: 65px !important;
   span {
     span {
       color: $custom;
