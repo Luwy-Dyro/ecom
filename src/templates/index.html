@@ -29,15 +29,20 @@
 
             <!-- LOGO -->
             <div class="topbar-left">
+                <button class="button-menu-mobile open-left waves-light waves-effect">
+                    <i class="dripicons-menu"></i>
+                </button>
                 <a href="index.html" class="logo">
                     <span>
                         <!-- <img src="assets/images/logo.png" alt="" height="16"> -->
                         ecom
                     </span>
-                    <i>
-                        <!-- <img src="assets/images/logo_sm.png" alt="" height="28"> -->
-                        e
-                    </i>
+                    <!-- <span>
+                            ecom
+                    </span> -->
+                    <!-- <i>
+                        ecom
+                    </i> -->
                 </a>
             </div>
 
@@ -109,38 +114,34 @@
                 </ul>
 
                 <ul class="list-inline mb-0 d-flex menu_superior">
-                    <li >
-                        <button class="button-menu-mobile open-left waves-light waves-effect">
-                            <i class="dripicons-menu"></i>
-                        </button>
-                    </li>
+      
 
                     <li class="hide-phone">
                         <a class="nav-link waves-effect waves-light" href="#" >
-                            <i class="mdi mdi-earth"></i> Diseño
+                            <i class="fa fa-heart-o" aria-hidden="true"></i> Diseño
                         </a>
                     </li>
 
                     <li class="hide-phone">
                             <a class="nav-link waves-effect waves-light" href="#" >
-                                <i class="mdi mdi-earth"></i> Publicaciones
+                                <i class="fa fa-laptop" aria-hidden="true"></i> Publicaciones
                             </a>
                     </li>
 
                     <li class="hide-phone">
                             <a class="nav-link waves-effect waves-light" href="#" >
-                                <i class="mdi mdi-earth"></i> Comercial
+                                    <i class="fa fa-address-book-o" aria-hidden="true"></i> Comercial
                             </a>
                     </li>
 
                     <li class="hide-phone">
                             <a class="nav-link waves-effect waves-light" href="#" >
-                                <i class="mdi mdi-earth"></i> Producción
+                                    <i class="fa fa-print" aria-hidden="true"></i> Producción
                             </a>
                     </li>
                     <li class="hide-phone">
                             <a class="nav-link waves-effect waves-light" href="#" >
-                                <i class="mdi mdi-earth"></i> Reportes
+                                    <i class="fa fa-area-chart" aria-hidden="true"></i> Reportes
                             </a>
                     </li>
                    
@@ -242,6 +243,89 @@
 
 
              
+                    <div class="row">
+                            <div class="col-xl-7">
+                                <div class="card-box">
+                                    <h4 class="header-title">Historial de Transacciones</h4>
+    
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Taza de Conversión</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
+                                                    <span class="text-dark">1.78%</span>
+                                                    <small></small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Valor promedio por orden</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
+                                                    <span class="text-dark">25.87</span>
+                                                    <small>USD</small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Total Balance</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
+                                                    <span class="text-dark">87,4517</span>
+                                                    <small>USD</small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <canvas id="transactions-chart" height="350" class="mt-4"></canvas>
+                                </div>
+                            </div>
+                            <div class="col-xl-5">
+                                <div class="card-box">
+                                    <h4 class="header-title">Historial de Ventas</h4>
+    
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Conversion Rate</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
+                                                    <span class="text-dark">3.94%</span>
+                                                    <small></small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Average Sales</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-down-bold-hexagon-outline text-danger"></i>
+                                                    <span class="text-dark">16.25</span>
+                                                    <small>USD</small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="text-center mt-3">
+                                                <h6 class="font-normal text-muted font-14">Total Sales</h6>
+                                                <h6 class="font-18">
+                                                    <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
+                                                    <span class="text-dark">124,858.67</span>
+                                                    <small>USD</small>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <canvas id="sales-history" height="350" class="mt-4"></canvas>
+                                </div>
+                            </div>
+                        </div>
+    
 
                     <div class="row">
                         <div class="col-lg-4">
@@ -476,89 +560,6 @@
 
 
 
-                    <div class="row">
-                        <div class="col-xl-7">
-                            <div class="card-box">
-                                <h4 class="header-title">Historial de Transacciones</h4>
-
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Taza de Conversión</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
-                                                <span class="text-dark">1.78%</span>
-                                                <small></small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Valor promedio por orden</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
-                                                <span class="text-dark">25.87</span>
-                                                <small>USD</small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Total Balance</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
-                                                <span class="text-dark">87,4517</span>
-                                                <small>USD</small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <canvas id="transactions-chart" height="350" class="mt-4"></canvas>
-                            </div>
-                        </div>
-                        <div class="col-xl-5">
-                            <div class="card-box">
-                                <h4 class="header-title">Historial de Ventas</h4>
-
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Conversion Rate</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
-                                                <span class="text-dark">3.94%</span>
-                                                <small></small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Average Sales</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-down-bold-hexagon-outline text-danger"></i>
-                                                <span class="text-dark">16.25</span>
-                                                <small>USD</small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="text-center mt-3">
-                                            <h6 class="font-normal text-muted font-14">Total Sales</h6>
-                                            <h6 class="font-18">
-                                                <i class="mdi mdi-arrow-up-bold-hexagon-outline text-success"></i>
-                                                <span class="text-dark">124,858.67</span>
-                                                <small>USD</small>
-                                            </h6>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <canvas id="sales-history" height="350" class="mt-4"></canvas>
-                            </div>
-                        </div>
-                    </div>
-
 
 
                 </div>
@@ -583,11 +584,11 @@
     <script src="assets/js/metisMenu.min.js"></script>
     <script src="assets/js/waves.js"></script>
     <script src="assets/js/jquery.slimscroll.js"></script>
-    <script src="../plugins/waypoints/lib/jquery.waypoints.min.js"></script>
-    <script src="../plugins/counterup/jquery.counterup.min.js"></script>
+    <script src="libs/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="libs/counterup/jquery.counterup.min.js"></script>
 
     <!-- Chart JS -->
-    <script src="../plugins/chart.js/chart.bundle.js"></script>
+    <script src="libs/chart.js/chart.bundle.js"></script>
 
     <!-- init dashboard -->
     <script src="assets/pages/jquery.dashboard.init.js"></script>

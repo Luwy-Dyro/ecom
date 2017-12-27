@@ -71,6 +71,7 @@
     position: relative;
     width: 240px;
     z-index: 1;
+    display: flex;
 
     .logo {
       line-height: 70px;
@@ -447,11 +448,11 @@
   }
   .topbar {
     .topbar-left {
-      width: 70px;
+      width: 240px;
       .logo {
         span {
-          display: none;
-          opacity: 0;
+          /*display: none;
+          opacity: 0;*/
         }
         i {
           display: block;

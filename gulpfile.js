@@ -28,6 +28,14 @@ gulp.task('estilos', function () {
         .pipe(gulp.dest('./dist/assets/css'));
 });
 
+/**Plugins*/
+gulp.task('libs', function () {
+    gulp.src(['./src' + '/libs'+'/**/*.js'])
+        //.pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(gulp.dest('./dist/libs'));
+});
+
+/**Templates HTML */
 gulp.task('templates', function () {
     gulp.src('./src/templates/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
@@ -63,7 +71,7 @@ gulp.task("ServerBrowserSync", function(){
 
 /**Ejecutables*/
 //gulp.task('default', ['watch']);
-gulp.task("build", ["estilos", "templates"]);
+gulp.task("build", ["estilos", "templates", "libs"]);
 //gulp.task('server', ['connect', 'watch']);
 gulp.task("server", ["ServerBrowserSync", "watch"]);
 
