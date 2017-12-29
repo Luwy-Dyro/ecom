@@ -1,4 +1,4 @@
-﻿/**
+/**
 * Theme: Abstack - Bootstrap 4 Web App kit
 * Author: Coderthemes
 * Auto Complete

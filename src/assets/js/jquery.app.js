@@ -1,8 +1,3 @@
-/**
- * Theme: Abstack - Bootstrap 4 Web App kit
- * Author: Coderthemes
- * Module/App: Main Js
- */
 
 
 (function ($) {
@@ -12,17 +7,17 @@
     function initSlimscrollMenu() {
 
         $('.slimscroll-menu').slimscroll({
-            height: 'auto',
+            height: '550px',
             position: 'right',
             size: "8px",
             color: '#9ea5ab',
-            wheelStep: 5
+            wheelStep: 5        
         });
     }
 
     function initSlimscroll() {
         $('.slimscroll').slimscroll({
-            height: 'auto',
+            height: '550px',
             position: 'right',
             size: "8px",
             color: '#9ea5ab'

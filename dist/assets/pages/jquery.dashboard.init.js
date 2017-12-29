@@ -1,9 +1,3 @@
-/**
- Template Name: Abstack - Bootstrap 4 Web App kit
- Author: CoderThemes
- Email: coderthemes@gmail.com
- File: Dashboard
- */
 
 
 !function($) {
@@ -57,13 +51,13 @@
             var lineChart = {
                 labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
                 datasets: [{
-                    label: "Conversion Rate",
+                    label: "Ratio de Conversión",
                     fill: false,
                     backgroundColor: '#5d6dc3',
                     borderColor: '#5d6dc3',
                     data: [44,60,-33,58,-4,57,-89,60,-33,58]
                 }, {
-                    label: "Average Sale Value",
+                    label: "Valor promedio de venta",
                     fill: false,
                     backgroundColor: '#3ec396',
                     borderColor: "#3ec396",
@@ -118,7 +112,7 @@
                 labels: ["January", "February", "March", "April", "May", "June", "July"],
                 datasets: [
                     {
-                        label: "Sales Analytics",
+                        label: "Cuadro de Ventas",
                         backgroundColor: "#3ec396",
                         borderColor: "#3ec396",
                         borderWidth: 1,
