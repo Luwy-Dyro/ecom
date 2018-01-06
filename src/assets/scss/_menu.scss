@@ -1,36 +1,27 @@
-/* =============
-  Menu
-============= */
-
-/* Metis Menu css */
 .metismenu {
   padding: 0;
-
   ul {
     padding: 0;
-
     li {
       list-style: none;
     }
   }
 }
-
 .nav-second-level li a, .nav-thrid-level li a {
   padding: 8px 20px 8px 10px;
   color: rgba($dark,0.7);
   display: block;
   font-weight: 500;
   position: relative;
-
   &:focus {
     background-color: $bg-leftbar;
     color: $dark;
   }
-
   &:hover {
     background-color: $bg-leftbar;
     color: $dark;
   }
+
 }
 
 .nav-second-level > li > a {
@@ -94,6 +85,40 @@
   max-height: 70px;
   box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.3);
 
+  .menu_superior{
+    li{
+      .menu-arrow{
+        -webkit-transition: -webkit-transform .15s;
+        -o-transition: -o-transform .15s;
+        transition: transform .15s;
+        right: 20px;
+        display: inline-block;
+        font-family: 'Material Design Icons';
+        text-rendering: auto;
+        line-height: 28px;
+        font-size: 14px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+        &:before {
+          content: "\F142";
+        }
+      }
+    }
+
+    .li.show{
+      .menu-arrow {
+        -ms-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   .nav-link {
     padding: 0;
     line-height: 70px;
@@ -119,7 +144,6 @@
     li{
       margin: 0 4% 0 0
     }
-
   }
 
 }
@@ -175,7 +199,7 @@
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
 }
 
-.enlarged .side-menu {
+.menul_compress .side-menu {
   position: absolute;
 }
 
@@ -307,7 +331,7 @@
   font-family: $font-secondary;
 }
 
-.enlarged {
+.menul_compress {
   .slimScrollDiv,.slimscroll-menu {
     overflow: inherit !important;
   }
@@ -315,7 +339,7 @@
     visibility: hidden;
   }
 }
-.enlarged #wrapper {
+.menul_compress #wrapper {
   .navbar-custom {
     margin-left: 70px;
   }
@@ -568,11 +592,11 @@
 
 
 /* Body min-height set */
-body.enlarged {
+body.menul_compress {
   min-height: 1200px;
 }
 
-body.enlarged.bg-transparent {
+body.menul_compress.bg-transparent {
   min-height: 500px;
 }
 

@@ -1,11 +1,4 @@
 /**
-* Theme: Abstack - Bootstrap 4 Web App kit
-* Author: Coderthemes
-* Module/App: Core js
-*/
-
-
-/**
  * Components
  */
 !function($) {

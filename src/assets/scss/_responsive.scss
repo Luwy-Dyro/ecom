@@ -33,14 +33,13 @@
   .topbar .topbar-left {
     height: 70px;
   }
-
   .navbar-nav.navbar-right {
     float: right;
   }
   .content-page {
     margin-left: 0 !important;
   }
-  .enlarged .left.side-menu {
+  .menul_compress .left.side-menu {
     margin-left: -70px;
   }
   .footer {
@@ -85,6 +84,7 @@
     li {
       display: block;
     }
+
   }
   .navbar-nav {
     margin: 0;
@@ -111,11 +111,9 @@
   .side-menu {
     z-index: 10 !important;
   }
-
   .button-menu-mobile {
     display: block;
   }
-
   .search-bar {
     display: none !important;
   }
@@ -156,7 +154,7 @@
       //position: absolute;
     }
   }
-  .enlarged {
+  .menul_compress {
     .side-menu.left {
       box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
     }
